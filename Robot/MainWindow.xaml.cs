@@ -102,6 +102,14 @@ namespace Robot
                 //canvas.Children.Add(robotimg);
                 canvas.Children.Insert(1, robotimg);
             }
+            //Title = nWidth+ " " + nHeight+ " " + robot.robotPos.X + " " + robot.robotPos.Y;
+
+            if (robot1.robotPos.X == coinPos.X && robot1.robotPos.Y == coinPos.Y)
+            {
+                MessageBox.Show("Ha guanyat el jugador 1");
+                this.Close();
+            }
+
 
             //2
             if (!(robot2.robotPos.Y * tamanyYCasella > canvas.ActualHeight || robot2.robotPos.Y * tamanyYCasella < 0))
@@ -116,7 +124,12 @@ namespace Robot
                 canvas.Children.RemoveRange(2, 1);
                 canvas.Children.Add(robotimg1);
             }
-
+            //Title = robot2.robotPos.X + " " + robot2.robotPos.Y + " " + robot2.robotPos.X + " " + robot2.robotPos.Y;
+            if (robot2.robotPos.X == coinPos.X && robot2.robotPos.Y == coinPos.Y)
+            {
+                MessageBox.Show("Ha guanyat el jugador 2");
+                this.Close();
+            }
         }
 
         private void moure(robotGame robot)
