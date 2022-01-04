@@ -67,6 +67,7 @@ namespace Robot
 
         private void Timer_Tick(object sender, EventArgs e)
         {
+            tbMoviments.Text = (Convert.ToInt32(tbMoviments.Text) + 1).ToString();
             moure(robot1);
             moure(robot2);
             //Title = robot.Direccio.ToString();

@@ -10,7 +10,11 @@
         <DockPanel.Background>
             <ImageBrush/>
         </DockPanel.Background>
-        <TextBlock Text="N moviments: " DockPanel.Dock="Bottom"/>
+        <DockPanel DockPanel.Dock="Bottom">
+            <TextBlock Text="N moviments: " DockPanel.Dock="Left"/>
+            <TextBlock Text="0" DockPanel.Dock="Left" Name="tbMoviments"/>
+        </DockPanel>
+
         <Canvas Background="Gray" x:Name="canvas" DockPanel.Dock="Top" Width="200" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center"></Canvas>
     </DockPanel>
 </Window>
