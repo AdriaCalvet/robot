@@ -10,9 +10,15 @@
         <DockPanel.Background>
             <ImageBrush/>
         </DockPanel.Background>
-        <DockPanel DockPanel.Dock="Bottom">
+        <DockPanel DockPanel.Dock="Bottom" LastChildFill="False">
             <TextBlock Text="N moviments: " DockPanel.Dock="Left"/>
             <TextBlock Text="0" DockPanel.Dock="Left" Name="tbMoviments"/>
+            
+            <TextBlock Text="" DockPanel.Dock="Right" Name="tbPos2Jug"/>
+            <TextBlock Text=" - Direccio 2on jug: " DockPanel.Dock="Right"/>
+            
+            <TextBlock Text="" DockPanel.Dock="Right" Name="tbPos1Jug"/>
+            <TextBlock Text="Direccio 1r jug: " DockPanel.Dock="Right"/>
         </DockPanel>
 
         <Canvas Background="Gray" x:Name="canvas" DockPanel.Dock="Top" Width="200" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center"></Canvas>

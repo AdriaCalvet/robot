@@ -70,7 +70,9 @@ namespace Robot
             tbMoviments.Text = (Convert.ToInt32(tbMoviments.Text) + 1).ToString();
             moure(robot1);
             moure(robot2);
-            //Title = robot.Direccio.ToString();
+            tbPos1Jug.Text = robot1.Direccio.ToString();
+            tbPos2Jug.Text = robot2.Direccio.ToString();
+
             int tamanyXCasella = (int)(canvas.ActualWidth / robotGame.x_SIZE);
             int tamanyYCasella = (int)(canvas.ActualHeight / robotGame.y_SIZE);
             Image robotimg = new Image()
